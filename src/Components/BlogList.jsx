@@ -1,13 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const BlogList = () => {
   return (
-   <>
+    <div>
+      <h1 className="mt-5">Blog page</h1>
+      <h1 className="mt-5">Blog page</h1>
+      <h1 className="mt-5">Blog page</h1>
+      <h1 className="mt-5">Blog page</h1>
+     
+    </div>
+  );
+};
 
-   <h1>Blog page</h1>
- 
-   </>
-  )
-}
-
-export default BlogList
+export default BlogList;

@@ -1,13 +1,4 @@
 import React from "react";
-import Header from './Header.jsx';
-import TeamWriter from './TeamWriter.jsx';
-import EssayWritingFeatures from './EssayWritingFeatures.jsx';
-import LatestFeedback from './LatestFeedback.jsx';
-import PaperWritingServices from './PaperWritingServices.jsx';
-import FreqAskQuestions from './FreqAskQuestions.jsx';
-import EssayWritingExp from './EssayWritingExp.jsx'
-import StayAnonymus from './StayAnonymus.jsx';
-
 import {Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -30,14 +21,14 @@ const Navbar = () => {
           <nav id="navbar" className="navbar order-last order-lg-0">
             <ul>
               <li>
-                <a className="nav-link scrollto active" href="#hero">
+                <Link className="nav-link scrollto active" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li >
-                <a className="nav-link scrollto" href="#blogs">
+                {/* <a className="nav-link scrollto" href="#blogs">
                   About
-                </a>
+                </a> */}
               </li>
               <li>
                 <a className="nav-link scrollto" href="#services">
@@ -120,16 +111,6 @@ const Navbar = () => {
 
         </div>
       </header>
-
-        < Header/>
-        
-        <TeamWriter/>
-        <EssayWritingFeatures/>
-        <LatestFeedback/>
-        <PaperWritingServices/>
-        <FreqAskQuestions/>
-        <EssayWritingExp/>
-        <StayAnonymus/>
   
     </div>
   );
