@@ -21,7 +21,7 @@ const LatestFeedback = () => {
             <div className="card-body">
         <div className="d-flex justify-content-around">
             <div className="mt-1"style={{fontSize:"14px",color:colorScheme.mainColor,fontWeight:"600"}}>Reviews</div>
-            <img src={sitejabber} alt="" className="img-fluid" style={{width:"7em"}}/>
+            <img src={sitejabber} alt="" className="img-fluid"/>
             </div>
                 {/* end-card-body */}
             </div>
@@ -32,7 +32,7 @@ const LatestFeedback = () => {
             <div className="card-body">
         <div className="d-flex justify-content-around">
             <div className="mt-1"style={{fontSize:"14px",color:"#92ABC9"}}>Reviews</div>
-            <img src={sitejabber} alt="" className="img-fluid" style={{width:"7em"}}/>
+            <img src={sitejabber} alt="" className="img-fluid"/>
             </div>
                 {/* end-card-body */}
             </div>

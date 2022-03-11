@@ -31,7 +31,7 @@ const EssayWritingExp = () => {
    {/* col-end */}
    
     
-   <div className="col-lg-6">
+   <div className="col-lg-6 gy-3">
    <div className="card card-essay-exp" style={{borderRadius:"30px"}}>
    <div className="card-body">
    <div className="d-flex p-3 gap-3">
@@ -68,7 +68,7 @@ const EssayWritingExp = () => {
 
    {/* end-col */}
 
-  <div className="col-lg-6">
+  <div className="col-lg-6 gy-3">
    <div className="card card-essay-exp" style={{borderRadius:"30px"}}>
    <div className="card-body">
    <div className="d-flex p-3 gap-3">

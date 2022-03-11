@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       {/* ======= Hero Section ======= */}
-      <section id="hero" className="mt-3" style={{background:colorScheme.background}}>
+      <section id="hero" className="hero" style={{background:colorScheme.background}}>
       <div className="mt-5">
         <div className="container">
           <div className="row">
@@ -31,7 +31,7 @@ const Header = () => {
                   customers
                 </h3>
 
-                <div className="col-lg-3 col-sm-4">
+                <div className="col-lg-3 col-md-2  col-sm-3">
                   <div className="card" style={{borderRadius: "10px", height: "4em"}}>
                     <div className="card-body">
                       <i className="fab fa-accusoft" style={{ fontSize: "15px",color:"#e65100" }}>
@@ -49,7 +49,7 @@ const Header = () => {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-sm-4">
+                <div className="col-lg-3 col-md-2 col-sm-3">
                   <div
                     className="card"
                     style={{ borderRadius: "10px", height: "4em" }}
@@ -71,7 +71,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-sm-4">
+                <div className="col-lg-3 col-md-2 col-sm-3">
                   <div
                     className="card"
                     style={{ borderRadius: "10px", height: "4em" }}

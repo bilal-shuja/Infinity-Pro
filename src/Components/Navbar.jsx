@@ -1,116 +1,95 @@
 import React from "react";
+import MainLogo from '../Images/mainLogo.svg'
 import {Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
-      <div id="topbar" className="fixed-top">
+      {/* <div id="topbar" className="fixed-top">
         <h4 className="text-center  mb-3">
           unique design-same expert service
         </h4>
-      </div>
-
+      </div> */}
       {/* ======= Header ======= */}
-      <header id="header" className="fixed-top">
-        <div className="container d-flex align-items-center">
-          <h1 className="logo me-5">
-            <a href="index.html">Infinity</a>
-          </h1>
-          {/* Uncomment below if you prefer to use an image logo */}
-          {/* <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
-          <nav id="navbar" className="navbar order-last order-lg-0">
-            <ul>
-              <li>
-                <Link className="nav-link scrollto active" to="/">
-                  Home
-                </Link>
-              </li>
-              <li >
-                {/* <a className="nav-link scrollto" href="#blogs">
-                  About
-                </a> */}
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#services">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#departments">
-                  Departments
-                </a>
-              </li>
-              <li>
-                <Link className="nav-link scrollto" to="/blogs"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li className="dropdown">
-                <a href="#">
-                  <span>Drop Down</span> <i className="bi bi-chevron-down" />
-                </a>
-                <ul>
-                  <li>
-                    <a href="#">Drop Down 1</a>
-                  </li>
-                  <li className="dropdown">
-                    <a href="#">
-                      <span>Deep Drop Down</span>{" "}
-                      <i className="bi bi-chevron-right" />
-                    </a>
-                    <ul>
-                      <li>
-                        <a href="#">Deep Drop Down 1</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 2</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 3</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 4</a>
-                      </li>
-                      <li>
-                        <a href="#">Deep Drop Down 5</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 2</a>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 3</a>
-                  </li>
-                  <li>
-                    <a href="#">Drop Down 4</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a className="nav-link scrollto" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-            <i className="bi bi-list mobile-nav-toggle" />
-            
-          </nav>
-          {/* .navbar */}
-          <div className="row ms-auto">
-            <div className="col-lg-12 col-sm-12">
-              <button className="btn btn-outline-primary btn-lg">Log In</button>
-            </div>
-          </div>
-          <div className="row ms-1">
-            <div className="col-lg-12 col-sm-12">
-              <button className="btn btn-primary btn-lg sign-up">Sign Up</button>
-            </div>
-          </div>
+      <nav className="navbar navbar-expand-lg fixed-top navbar-light" style={{backgroundColor:"#fff"}}>
+    <div className="container-fluid">
+      <Link className="navbar-brand " to={`${process.env.PUBLIC_URL}/`}><img src={MainLogo} alt=""style={{width:"12em"}} /></Link>
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon" />
+      </button>
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
+          <li className="nav-item">
+            <a className="nav-link me-2" aria-current="page" href="#">Writers</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link  me-2" href="#">How To Order</a>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a className="dropdown-item" href="#">Service</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
 
-        </div>
-      </header>
+            
+            </ul>
+          </li>
+              <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle me-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Offers
+            </a>
+            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a className="dropdown-item" href="#">Offers</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+              <li><a className="dropdown-item" href="#">Another action</a></li>
+
+          
+            </ul>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link me-2" to={`${process.env.PUBLIC_URL}/Faq`}>FAQ</Link>
+          </li>
+
+          <li className="nav-item">
+            <a className="nav-link me-2" href="#">About</a>
+          </li>
+
+          <li className="nav-item " style={{marginRight:"8em"}}>
+            <Link className="nav-link" to={`${process.env.PUBLIC_URL}/blogs`}>Blog</Link>
+          </li>
+
+        
+        </ul>
+  {/* */}
+              <div className="nav-btns">
+                  <button className="btn  me-2 btn-login">Log In</button>
+                  <button className="btn btn-primary btn-SignUp">Sign Up</button>
+          </div>
+    
+      </div>
+  
+
+    </div>
+
+        
+        
+  </nav>
+
+  {/* End of .container */}
   
     </div>
   );

@@ -69,12 +69,12 @@ const EssayWritingFeatures = () => {
 </div>
 {/* end-col-6 */}
 
-    <div className="col-lg-6 col-md-4">
+    <div className="col-lg-6 col-md-4 col-sm-8">
     <div className="row">
    <div className="card outer-card">
     <div className="card card-2">
     <h3 className="text-center mt-5 mb-3" style={{fontSize:"24px",fontWeight:"800",color:"#111"}}>Price Includes</h3>
-   <div className="d-flex justify-content-around" style={{display:"flex"}}>
+   <div className="d-flex justify-content-around" >
     
     <img src={check} alt="" className="img-fluid" style={{width:"2.5rem",height:"2.5rem"}}/>
  
@@ -86,7 +86,7 @@ const EssayWritingFeatures = () => {
 <hr />
 </div>
 
-   <div className="d-flex justify-content-around" style={{display:"flex"}}>
+   <div className="d-flex justify-content-around" >
     
     <img src={check} alt="" className="img-fluid"  style={{width:"2.5rem",height:"2.5rem"}}/>
  
@@ -98,7 +98,7 @@ const EssayWritingFeatures = () => {
 <hr />
 </div>
 
-   <div className="d-flex justify-content-around" style={{display:"flex"}}>
+   <div className="d-flex justify-content-around" >
     
     <img src={check} alt="" className="img-fluid" style={{width:"2.5rem",height:"2.5rem",marginLeft:"2px"}}/>
  
@@ -110,7 +110,7 @@ const EssayWritingFeatures = () => {
 <hr />
 </div>
 
-   <div className="d-flex justify-content-around" style={{display:"flex"}}>
+   <div className="d-flex justify-content-around" >
     
     <img src={check} alt="" className="img-fluid" style={{width:"2.5rem",height:"2.5rem",marginLeft:"3px"}}/>
  
@@ -122,7 +122,7 @@ const EssayWritingFeatures = () => {
 <hr />
 </div>
 
-   <div className="d-flex justify-content-around" style={{display:"flex"}}>
+   <div className="d-flex justify-content-around" >
     
     <img src={check} alt="" className="img-fluid ms-1" style={{width:"2.5rem",height:"2.5rem"}}/>
  
@@ -134,7 +134,7 @@ const EssayWritingFeatures = () => {
 <hr />
 </div>
 
-   <div className="d-flex justify-content-around" style={{display:"flex"}}>
+   <div className="d-flex justify-content-around" >
     
     <img src={check} alt=""className="img-fluid ms-2" style={{width:"2.5rem",height:"2.5rem"}}/>
  
@@ -171,7 +171,8 @@ const EssayWritingFeatures = () => {
     {/* end-main-row */}
   
   </div>
-</section>{/* End Departments Section */}
+</section>
+{/* End Departments Section */}
 
 
     
